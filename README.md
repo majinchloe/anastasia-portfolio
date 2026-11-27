@@ -16,3 +16,6 @@ Portfolio cards are placeholders, other pages and forms are not built. Contact l
 ## Deploy
 Commit the unzipped contents to a GitHub repository (root containing index.html) and connect it to Cloudflare Pages. Build command: none; output directory: `/`.
 Google Drive can hold project versions and artwork, but it does not deploy or synchronise changes to Cloudflare Pages. GitHub should be the canonical website source.
+
+
+Cloudflare Pages: auto-deploy from the `main` branch. Preview site: https://anastasia-portfolio-bb4.pages.dev/
