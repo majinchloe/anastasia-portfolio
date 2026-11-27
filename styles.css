@@ -9,7 +9,7 @@
 .hero-scene{top:0;bottom:0;right:0;width:min(80vw,1470px);height:100%;overflow:visible;pointer-events:auto;z-index:1;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 38%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,#000 38%,#000 100%)}
 .landscape{width:100%;height:108%;bottom:-15px;right:0;max-width:none;object-fit:cover;preserveAspectRatio:none}
 .hero-glow{z-index:2;background:linear-gradient(90deg,#fff8f4 0%,#fff8f4bf 26%,#fff8f400 57%)}
-.hero:after,.cta:after{content:"";position:absolute;inset:0;pointer-events:none;background-image:url('assets/paper-grain.png');background-repeat:repeat;opacity:.19;mix-blend-mode:multiply;z-index:4}
+.hero:after{content:"";position:absolute;inset:0;pointer-events:none;background-image:url('assets/paper-grain.png');background-repeat:repeat;opacity:.19;mix-blend-mode:multiply;z-index:4}
 .hero-copy>p{max-width:510px}
 .landscape .layer,.landscape .cat,.landscape .branch{transition:translate .85s cubic-bezier(.12,.7,.2,1);will-change:translate}
 .layer-sun{animation:sunFloat 5.6s ease-in-out infinite alternate}
@@ -26,16 +26,7 @@
 @keyframes mountainDriftFront{from{transform:translateX(-30px)}to{transform:translateX(24px)}}
 @keyframes tailWag{0%,100%{transform:rotate(-13deg)}30%{transform:rotate(13deg)}60%{transform:rotate(-4deg)}80%{transform:rotate(17deg)}}
 @keyframes blinkV2{0%,26%,29%,63%,66%,100%{transform:scaleY(1)}27%,28%,64%,65%{transform:scaleY(.07)}}
-.cta{isolation:isolate;background:linear-gradient(135deg,#332959,#3c315e 65%,#30264f);min-height:270px;padding-top:76px;overflow:visible}
-.cta-wave{top:-92px;height:94px;z-index:1}
-.cta-mountains{position:absolute;inset:0;overflow:hidden;pointer-events:none;opacity:.5}
-.cta-mountain-back,.cta-mountain-front{position:absolute;left:-4%;width:110%;bottom:0;display:block;height:78%;clip-path:polygon(0 84%,10% 55%,22% 76%,36% 34%,49% 73%,63% 42%,78% 79%,91% 43%,100% 66%,100% 100%,0 100%)}
-.cta-mountain-back{background:#66527f;opacity:.34;transform:translateY(6%)}
-.cta-mountain-front{height:59%;background:#211b3f;opacity:.45;transform:scaleX(-1) translateY(17%)}
-.cta:after{z-index:2;opacity:.16;mix-blend-mode:screen}
-.cta-inner{position:relative;z-index:3}
-.site-footer{position:relative;background:#252040}
 @media(max-width:1050px){.hero-scene{width:86vw;right:-3vw}.hero-copy{max-width:540px}.hero-glow{background:linear-gradient(90deg,#fff8f4 0%,#fff8f4ed 31%,transparent 70%)}}
-@media(max-width:760px){.logo-image{width:47px;height:47px}.wordmark-text strong{font-size:12px}.hero,.hero-inner{min-height:810px}.hero-inner{pointer-events:auto}.hero-copy{padding-top:50px;max-width:620px}.hero-scene{top:auto;right:-5vw;bottom:0;height:400px;width:115vw;mask-image:linear-gradient(180deg,transparent 0%,#000 19%,#000 100%);-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 19%,#000 100%)}.hero-glow{background:linear-gradient(180deg,#fff8f4 0%,#fff8f4a8 49%,transparent 72%)}.landscape{bottom:-15px;height:110%;width:100%}.cta{padding-top:48px}.cta-wave{top:-78px;height:80px}}
+@media(max-width:760px){.logo-image{width:47px;height:47px}.wordmark-text strong{font-size:12px}.hero,.hero-inner{min-height:810px}.hero-inner{pointer-events:auto}.hero-copy{padding-top:50px;max-width:620px}.hero-scene{top:auto;right:-5vw;bottom:0;height:400px;width:115vw;mask-image:linear-gradient(180deg,transparent 0%,#000 19%,#000 100%);-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 19%,#000 100%)}.hero-glow{background:linear-gradient(180deg,#fff8f4 0%,#fff8f4a8 49%,transparent 72%)}.landscape{bottom:-15px;height:110%;width:100%}.cta{padding-top:44px}}
 @media(max-width:480px){.logo-image{width:44px;height:44px}.wordmark{gap:7px}.wordmark-text{padding-left:10px}.wordmark-text strong{font-size:10px;letter-spacing:.06em}.wordmark-text small{font-size:6.5px}.hero,.hero-inner{min-height:800px}.hero-scene{height:350px;width:126vw;right:-12vw}.hero-copy{padding-top:47px}.hero h1{font-size:clamp(43px,11vw,52px)}}
 @media(prefers-reduced-motion:reduce){.layer-sun,.layer-back,.layer-trees,.layer-path,.layer-front,.layer-mist,.cat-tail,.cat-eyes{animation:none!important}}
